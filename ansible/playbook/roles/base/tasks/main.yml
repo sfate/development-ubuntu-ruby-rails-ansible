@@ -3,7 +3,7 @@
   apt: update_cache=yes
 
 - name: Install apt dependencies
-  apt: name={{ item }}
+  apt: name={{ item }} force=yes
   with_items:
     - autoconf
     - bison
